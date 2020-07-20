@@ -10,6 +10,10 @@
   		SELECT * FROM member ORDER BY regidate DESC
   	</select>
   	
+  	<select id="memberLogin" resultType="mybatis.MemberVO" parameterType="mybatis.MemberVO">
+  		SELECT * FROM member WHERE id=#{id} AND pass=#{pass}
+  	</select>
+  	
   </mapper>
 
 
